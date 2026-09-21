@@ -13,7 +13,7 @@ layout: default
     {% for project in site.projects %}
     <li>
       <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-      <div class="date">{{ project.tech }}</div>
+      <div class="date">{{ project.tech }}{{ project.stack }}</div>
       {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
     </li>
     {% endfor %}
